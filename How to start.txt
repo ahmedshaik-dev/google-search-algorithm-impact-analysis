@@ -29,9 +29,9 @@ Steps
                                                             
   If Google had an update on a specific date:                                                                     
                                                             
-  python -m seo_analysis \                                                                                        
-    --input "/path/to/gsc_export.xlsx" \                    
+  python -m seo_analysis \
+    --input "/path/to/gsc_export.xlsx" \
     --output "/path/to/algo_report.xlsx" \
     --mode algo_update \
-    --update-date "2026-05-10" \                                                                                  
-    --client "aha.video"
+    --update-date "2026-05-10" \
+    --client "example.com"

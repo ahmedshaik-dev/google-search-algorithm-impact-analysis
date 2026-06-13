@@ -328,7 +328,7 @@ python -m seo_analysis \
 python -m seo_analysis \
   --input "~/Downloads/may_gsc.xlsx" \
   --output "~/Desktop/may_report_client.xlsx" \
-  --client "aha.video"
+  --client "example.com"
 ```
 **Result:** Professional May performance report delivered to client
 

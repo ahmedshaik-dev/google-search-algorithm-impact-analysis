@@ -40,7 +40,7 @@ python -m seo_analysis --input "path\to\your\gsc_export.xlsx" --output "path\to\
 **With client name in the report header:**
 
 ```
-python -m seo_analysis --input "gsc_export.xlsx" --output "report.xlsx" --client "aha.video"
+python -m seo_analysis --input "gsc_export.xlsx" --output "report.xlsx" --client "example.com"
 ```
 
 ### Algorithm Update Detection
@@ -48,7 +48,7 @@ python -m seo_analysis --input "gsc_export.xlsx" --output "report.xlsx" --client
 Use this when Google announces a core update and you want to measure impact:
 
 ```
-python -m seo_analysis --input "gsc_export.xlsx" --output "algo_report.xlsx" --mode algo_update --update-date "2025-05-10" --client "aha.video"
+python -m seo_analysis --input "gsc_export.xlsx" --output "algo_report.xlsx" --mode algo_update --update-date "2025-05-10" --client "example.com"
 ```
 
 ---
@@ -91,7 +91,7 @@ The tool generates a formatted Excel workbook with these sheets:
 |---|---|---|---|
 | `--input` | Yes | `data.xlsx` | Path to your GSC export |
 | `--output` | Yes | `report.xlsx` | Where to save the report |
-| `--client` | No | `aha.video` | Client name shown in report header |
+| `--client` | No | `example.com` | Client name shown in report header |
 | `--mode` | No | `algo_update` | `standard` (default) or `algo_update` |
 | `--update-date` | Only for algo mode | `2025-05-10` | Date of the algorithm update |
 
