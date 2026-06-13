@@ -1,0 +1,37 @@
+Steps                                                                                                           
+
+  1. Export from Google Search Console:                                                                           
+    - GSC → Compare mode → export as .xlsx
+    - Save it anywhere (e.g., Desktop, Downloads, etc.)                                                           
+  2. Run the tool:                                          
+                                                                                                                  
+  cd "/Volumes/Ai Projects/seo-analytics-engine"            
+                                                                                                                  
+  python -m seo_analysis \
+    --input "/path/to/your/gsc_export.xlsx" \                                                                     
+    --output "/path/to/output/report.xlsx" \                                                                      
+    --client "your-site-name"
+                                                                                                                  
+  Real Example
+
+  If your GSC export is at ~/Downloads/gsc_data.xlsx:
+
+  cd seo-analytics-engine
+
+  python -m seo_analysis \
+    --input "~/Downloads/gsc_data.xlsx" \
+    --output "~/Downloads/seo_report.xlsx" \
+    --client "my-client"                                                                                          
+   
+  Output: seo_report.xlsx with 6 sheets (Summary, Queries, Pages, Countries, Devices, Search Appearance)          
+                                                            
+  For Algorithm Updates                                                                                           
+                                                            
+  If Google had an update on a specific date:                                                                     
+                                                            
+  python -m seo_analysis \                                                                                        
+    --input "/path/to/gsc_export.xlsx" \                    
+    --output "/path/to/algo_report.xlsx" \
+    --mode algo_update \
+    --update-date "2026-05-10" \                                                                                  
+    --client "aha.video"
